@@ -784,7 +784,11 @@ mail.python.org
 tutorialspoint.com/python
 python-para-impacientes.blogspot.com
 docs.python.org
-recursospython.com"""
+recursospython.com
+
+__________ Código fuente en: ________
+github.com/nilsoviani/vtext
+"""
 
 			#Logo de vtext
 			imagen_logo = tk.PhotoImage(file="vtext.png")
