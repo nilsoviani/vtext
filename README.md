@@ -22,3 +22,5 @@ for this, follow the steps in https://anthony-tuininga.github.io/cx_Freeze/ you 
 This pocess is very explained in this site: https://pythonprogramming.net/converting-tkinter-to-exe-with-cx-freeze/
 If you have issues with TCL_LIBRARY and TK_LIBRARY the file setup.py has these lines added 
 you could need to change the directoy where python is installed
+
+For using the capabilities of this app you could use the .txt files attached in this repository (romeo.txt and mbox.txt)
