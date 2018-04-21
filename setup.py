@@ -1,4 +1,4 @@
-import cx_Freeze
+vimport cx_Freeze
 import sys
 import os
 
@@ -14,7 +14,7 @@ executables = [cx_Freeze.Executable("Vtext.py", base=base, icon="Vtext.ico")]
 
 cx_Freeze.setup(
 	name = "Vtext",
-	options = {"build_exe": {"packages":["tkinter"], "include_files":["Vtext.ico", "vtext_logo_187x187.gif", "python_logo.gif"]}},
+	options = {"build_exe": {"packages":["tkinter"], "include_files":["vtext.ico", "vtext.png", "python_logo.png"]}},
 	version = "1.0",
 	description = "Vtext",
 	executables = executables
