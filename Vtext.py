@@ -1,13 +1,12 @@
 import tkinter as tk
 from tkinter import StringVar, IntVar, ttk, filedialog as FileDialog, messagebox as MessageBox
-import tkinter.colorchooser
 from tkFontChooser import askfont
 import datetime
 import win32clipboard
 import win32api
 import win32print
 import tempfile
-import os, sys
+import sys
 
 __version__ = "1.0"
 __author__ = "Nilso Viani"
