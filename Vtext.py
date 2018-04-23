@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import StringVar, IntVar, ttk, filedialog as FileDialog, messagebox as MessageBox
 from tkFontChooser import askfont
-import datetime, time
+import time
 import win32clipboard
 import win32api
 import win32print
@@ -686,6 +686,9 @@ Vixion
 
 Joe Stepp
 github.com/Drax-il
+
+Diego Caraballo
+web: pythondiario.com
 
 _________ stackoverflow.com: ________
 Especialmente a:
