@@ -5,7 +5,7 @@ The libraries used in Vtext.py that you'll need to install are:
 
 tkFontChooser
 
-import win32clipboard
+win32clipboard
 
 For tkfontchooser use the content at https://pypi.python.org/pypi/tkfontchooser 
 
