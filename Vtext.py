@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import StringVar, IntVar, ttk, filedialog as FileDialog, messagebox as MessageBox
 from tkFontChooser import askfont
-import datetime
+import datetime, time
 import win32clipboard
 import win32api
 import win32print
@@ -305,28 +305,8 @@ class InterfazDeUsuario(tk.Tk):
 
 	#========= INSERTAR FECHA Y HORA (INSERT DATE AND TIME) ==========
 	def fecha_y_hora(self, event=None):
-		ahora = datetime.datetime.now()
-
-		if int(ahora.hour) == 00:
-			self.texto.focus_set()
-			fecha = "{}/{}/{} 12:{}:{} AM".format(ahora.day, ahora.month, ahora.year, ahora.minute, ahora.second)
-			self.texto.insert("insert", fecha)
-
-		elif int(ahora.hour) > 00 and int(ahora.hour)<= 11:
-			self.texto.focus_set()
-			fecha = "{}/{}/{} {}:{}:{} AM".format(ahora.day, ahora.month, ahora.year, ahora.hour, ahora.minute, ahora.second)
-			self.texto.insert("insert", fecha)
-
-		elif int(ahora.hour) == 12:
-			self.texto.focus_set()
-			fecha = "{}/{}/{} {}:{}:{} PM".format(ahora.day, ahora.month, ahora.year, ahora.hour, ahora.minute, ahora.second)
-			self.texto.insert("insert", fecha)
-		else:
-			resta = int(ahora.hour) - 12
-			self.texto.focus_set()
-			fecha = "{}/{}/{} {}:{}:{} PM".format(ahora.day, ahora.month, ahora.year, resta, ahora.minute, ahora.second)
-			self.texto.insert("insert", fecha)
-
+		fecha = time.strftime('%d/%m/%Y %I:%M:%S %p')
+		self.texto.insert("insert", fecha)
 		self.contar_todo_el_texto()
 
 	#========= BUSCAR (SEARCH)	==========
