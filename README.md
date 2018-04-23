@@ -24,5 +24,6 @@ This pocess is very explained in this site: https://pythonprogramming.net/conver
 If you have issues with TCL_LIBRARY and TK_LIBRARY the file setup.py has these lines added 
 you could need to change the directoy where python is installed
 
-===== USE THIS FILES FOR TESTS =====
+===== USE THIS FILES FOR TESTS ===== 
+
 For using the capabilities of this app you could use the .txt files attached in this repository (romeo.txt and mbox.txt)
