@@ -5,16 +5,17 @@ The libraries used in Vtext.py are:
 
 import tkinter as tk
 from tkinter import StringVar, IntVar, ttk, filedialog as FileDialog, messagebox as MessageBox
-import tkinter.colorchooser
 from tkFontChooser import askfont
-import datetime
+import datetime, time
 import win32clipboard
 import win32api
 import win32print
 import tempfile
-import os, sys
+import sys
 
-For tkfontchooser use the content at https://pypi.python.org/pypi/tkfontchooser for install it using pip
+For tkfontchooser use the content at https://pypi.python.org/pypi/tkfontchooser for install it using pip: pip install tkfontchooser
+
+For win32clipboard errors, install this lib using pip: pip install pywin32 or go to: https://sourceforge.net/projects/pywin32/files/pywin32/
 
 You need to install cx_Freeze if you want to make a .exe or .msi of this project
 for this, follow the steps in https://anthony-tuininga.github.io/cx_Freeze/ you can install it through pip or download the file
