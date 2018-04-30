@@ -1,4 +1,4 @@
-vimport cx_Freeze
+import cx_Freeze
 import sys
 import os
 
